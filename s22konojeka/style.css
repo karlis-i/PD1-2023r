@@ -1,0 +1,239 @@
+:root {
+	--font-default: Arial, Helvetica, sans-serif;
+	--bg-light-gray: #ececec;
+	--bg-dark-gray: #4c4c4e;
+	--bg-white: #e4dede;
+	--white: #fff;
+	--text-orange: #e36414;
+	--table-color: #ec8b4f;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: var(--font-default);
+	margin: 0;
+}
+header {
+	padding: 2.5rem 0;
+	background: linear-gradient(
+		135deg,
+		var(--bg-white) 0%,
+		var(--bg-dark-gray) 100%
+	);
+}
+h2 {
+	font-size: 2rem;
+}
+header p.lead {
+	font-size: 2rem;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-left: 2rem;
+}
+header p.sub {
+	font-size: 1.5rem;
+	font-style: italic;
+	opacity: 0.33;
+	padding-left: 2rem;
+}
+header p.disc {
+	font-weight: bold;
+	float: right;
+	font-size: 2.5rem;
+	padding-right: 2rem;
+}
+header p.disc::before {
+	content: "\1F431 \00a0";
+}
+header p {
+	margin: 0;
+	padding-left: 2rem;
+}
+footer {
+	background-color: var(--bg-dark-gray);
+	color: var(--white);
+	padding: 2rem 0;
+	margin-top: 4rem;
+}
+footer p {
+	display: inline-block;
+	margin: 0;
+	padding: 0 1.5rem;
+}
+footer p.copyright {
+	float: right;
+}
+h2 {
+	text-align: center;
+}
+article {
+	padding-left: 4rem;
+	padding-bottom: 2rem;
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+nav {
+
+	background-color: var(--bg-light-gray);
+	color: var(--table-color);
+	padding: 1rem;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+   text-align: center;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+nav ul li a {
+	color: var(--text-orange);
+	text-decoration: none;
+}
+nav ul li::after {
+	content: "\1F431";
+}
+nav ul li:last-child::after {
+	content: "";
+}
+table {
+	border-collapse: collapse;
+	border: 1px solid var(--bg-dark-gray);
+	margin-bottom: 2rem;
+
+}
+table th,
+table td {
+	border-width: 0;
+}
+table tr th,
+table tr td {
+	border-bottom: 1px solid var(--bg-dark-gray);
+	border-right: 1px solid var(--bg-dark-gray);
+	padding: 0.25rem 0.5rem;
+}
+table tr th:last-child,
+table tr td:last-child {
+	border-right: none;
+}
+table tr:last-child th,
+table tr:last-child td {
+	border-bottom: none;
+}
+
+table tr th {
+	text-align: left;
+	background-color: var(--table-color);
+	color: var(--white);
+}
+table tr:nth-of-type(odd) td {
+	background-color: var(--bg-light-gray);
+}
+table tr:hover td {
+	background-color: var(--table-color);
+	color: var(--white);
+}
+table tr:first-child td {
+	color: var(--white);
+	background-color: var(--table-color);
+}
+
+main {
+	margin-top: 5rem;
+}
+.kitty-container {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+	gap: 1rem;
+	position: relative;
+}
+.kitty-container img {
+	aspect-ratio: 4/3;
+	max-width: 100%;
+	object-fit: cover;
+}
+.kitty-div {
+	position: relative;
+	max-width: 100%;
+}
+.kitty-div p {
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.flexbox-columns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: stretch;
+}
+.flexbox-columns > article {
+	display: block;
+	flex: 1;
+}
+.flexbox-columns > aside {
+	flex: 1.2;
+	margin: 0 3rem;
+}
+.flexbox-columns h2 {
+	margin-top: 0;
+}
+
+@media only screen and (max-width: 904px) {
+	header p {
+		display: block;
+		text-align: center;
+	}
+	header p.disc {
+		float: none;
+		padding-bottom: 1rem;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	header p.disc::before {
+		content: "\1F431 \A";
+		display: block;
+	}
+	header p.lead {
+		padding-left: 0px;
+	}
+	header p.sub {
+		padding-left: 0px;
+	}
+	table {
+		width: 100%;
+	}
+	.flexbox-columns > aside {
+		margin: 0 1.5rem;
+	}
+	footer p {
+		text-align: center;
+		display: block;
+		padding-bottom: 0.5rem;
+	}
+	footer p.copyright {
+		float: none;
+	}
+	.flexbox-columns {
+		display: block;
+	}
+	.flexbox-columns article {
+		padding: 0 1.5rem;
+		margin-bottom: 1rem;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.kitty-container {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}
