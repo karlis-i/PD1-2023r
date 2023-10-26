@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter.ttf");
+
+  font-family: "Bitter";
+  src: url("/fonts/Bitter.ttf");
+}
+
+:root {
+  --text-main: #eceff4;
+  --font-default: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --font-heading: "Bitter";
+  --text-light-blue: #70c1ff;
+  --background-color: #262c3a;
+  --table-alternating-color: #183144;
+}
+
+html {
+  font-family: var(--font-default);
+  background-color: var(--background-color);
+  color: var(--text-main);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--text-light-blue);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+th {
+  text-align: start;
+}
+
+footer {
+  padding: 0.5rem;
+}
+
+a:hover {
+  color: var(--text-light-blue);
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #222222;
+  width: 100%;
+}
+
+table th,
+table td {
+  border-width: 0;
+}
+
+table tr th,
+table tr td {
+  border-bottom: 1px solid var(--bg-dark-gray);
+  border-right: 1px solid var(--bg-dark-gray);
+  padding: 0.25rem 0.5rem;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  border-right: none;
+}
+
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr th {
+  text-align: left;
+  background-color: #373737;
+  color: #e2e2e2;
+}
+
+table tr:nth-of-type(odd) td {
+  background-color: var(--table-alternating-color);
+}
+
+table tr:hover td {
+  background-color: #232323;
+  color: #e2e2e2;
+}
+
+img {
+  object-fit: cover;
+}
+
+#header-section {
+  background: linear-gradient(135deg, #1a1f29 0%, #2c3546 100%);
+  padding: 0.5rem;
+}
+
+#uni-title {
+  color: #77dd77;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#dungeons-and-cats-banner {
+  display: flex;
+  justify-content: center;
+  background: #262c3a;
+  padding-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #eceff4;
+  opacity: 90%;
+}
+
+.container {
+  padding: 12px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.related-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 4rem;
+  align-items: center;
+}
+
+.related-content > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.related-content > div > img {
+  padding-bottom: 0.5rem;
+}
+
+.flexbox-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+
+  max-width: 1536px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexbox-columns > article {
+  flex: 2;
+}
+
+.flexbox-columns > aside {
+  flex: 1;
+}
+
+.role-list {
+  list-style: decimal inside;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .related-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
