@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* css reset */
@@ -14,8 +13,8 @@
 
 body {
   width: 100%;
-  background-color: black;
-  color: rgb(232, 241, 242);
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(186, 28%, 93%);
   font-family: 'Expletus Sans', sans-serif;
   font-size: 1.2rem;
   display: flex;
@@ -28,7 +27,7 @@ body {
 header { 
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: hsl(0, 0%, 0%);
   display: inline-block;
   padding: 20%;
   padding-left: 0;
@@ -53,9 +52,9 @@ ul {
 li{
   text-decoration: none;
   display: inline-block;
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-transform: uppercase;
-  border-right: 1px solid gray;
+  border-right: 1px solid hsl(0, 0%, 50%);
   padding: 0.5rem;
 }
 
@@ -65,11 +64,11 @@ li:nth-child(3){
 
 li a{
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 li a:visited{
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 li a:hover, a:focus{
@@ -81,7 +80,7 @@ li a:hover, a:focus{
 .welcome{
   width: 100%;
   min-height: 100vh;
-  background-color: black;
+  background-color: hsl(0, 0%, 0%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -104,19 +103,19 @@ li a:hover, a:focus{
   font-size: 1.2rem;
 }
 .welcome summary:hover{
-  color: goldenrod;
+  color: hsl(43, 74%, 49%);
 }
 
 summary::-webkit-details-marker {display: none; }
 
 details summary::before { 
-  content:"★"; 
-  color: white; 
+  content:"\02B50"; 
+  color: hsl(0, 0%, 100%); 
 }
 
 details[open] summary::before { 
-  content:"☆";  
-  color: white;
+  content:"\01F4AB";  
+  color: hsl(0, 0%, 100%);
 }
 
 details p{
@@ -124,7 +123,7 @@ details p{
   margin-bottom: 0;
   text-align: justify;
   font-size: 1.1rem;
-  background-color: black;
+  background-color: hsl(0, 0%, 0%);
   font-weight: bolder;
   line-height: 2rem;
 }
@@ -139,7 +138,7 @@ details p{
   display: flex;
   justify-content: center;
   align-content: flex-start;
-  background-color: black;
+  background-color: hsl(0, 0%, 0%);
   padding: 2rem;
   font-size: 2.5rem;
 }
@@ -161,7 +160,7 @@ details p{
 
 .card{
   border: 1px solid hsl(43, 74%, 49%);
-  background-color: rgb(30, 39, 73);
+  background-color: hsl(227, 42%, 20%);
   margin: 0.5rem;
   height: auto;
   border-radius: 15px;
@@ -194,7 +193,7 @@ details p{
 }
 
 .card h2 {
-  color: rgb(141, 153, 174);
+  color: hsl(218, 17%, 62%);
   grid-area: h;
   font-size: 1rem;
   padding: 1rem;
@@ -202,7 +201,7 @@ details p{
 }
 
 .card p {
-  color: rgb(141, 153, 174);
+  color: hsl(218, 17%, 62%);
   grid-area: p;
   padding: 1rem;
   font-size: 1rem;
@@ -213,7 +212,7 @@ details p{
   font-size: 1rem;
   padding: 1rem;
   display: inline-block;
-  border:3px solid black;
+  border:3px solid hsl(0, 0%, 0%);
   background-color: hsl(43, 74%, 49%); 
   border-radius: 20px;
   margin: 10px;
@@ -228,21 +227,21 @@ details p{
 
 .button a {
   text-decoration: none;
-  color: black;
+  color: hsl(0, 0%, 0%);
   display: block; /*last alterations */
 }
 
 button a:visited{
-  color:black;
+  color:hsl(0, 0%, 0%);
 }
 
 button a:hover, a:focus{
-  color: black;
+  color: hsl(0, 0%, 0%);
 }
 
 .card:hover{
-  background-color: rgb(39, 52, 105);
-  color: darkgray;
+  background-color: hsl(228, 46%, 28%);
+  color: hsl(0, 0%, 66%);
   cursor: pointer; 
   transform: scale(1.03); /* makes cards a little bit larger when hovering */
   transition: all 1s ease; /* all elements will transition in an easy manner in 1sec */
@@ -250,10 +249,10 @@ button a:hover, a:focus{
 
 footer{
   width: 100%;
-  background-color: rgb(51, 61, 79);
+  background-color: hsl(219, 22%, 25%);
   padding: 2rem;
   text-align: center;
-  color: rgb(249, 245, 227);
+  color: hsl(49, 65%, 93%);
   display: flex;
   flex-direction: column; 
   justify-content: center;
@@ -262,12 +261,12 @@ footer{
 
 footer a{
   text-decoration: none;
-  color: black;
+  color: hsl(0, 0%, 0%);
   text-transform: uppercase;
 }
 
 footer a:visited{
-  color: black;
+  color: hsl(0, 0%, 0%);
 }
 
 footer a:hover, a:focus{
@@ -307,10 +306,10 @@ footer a:hover, a:focus{
 
 .secondaryFooter{
   width: 100%;
-  background-color: rgb(51, 61, 79);
+  background-color: hsl(219, 22%, 25%);
   padding: 5rem;
   text-align: center;
-  color: rgb(249, 245, 227); 
+  color: hsl(49, 65%, 93%); 
 }
 
 .secondaryFigure{
@@ -323,7 +322,7 @@ footer a:hover, a:focus{
 }
 
 .secondaryFigure img{
-  border: 5px solid white;
+  border: 5px solid hsl(0, 0%, 100%);
   border-radius: 2rem;
   width: 55%;
   height: auto;
@@ -341,7 +340,7 @@ footer a:hover, a:focus{
 
 .aboutmeBody{
   width: 100%;
-  margin: 5px white solid;
+  margin: 5px hsl(0, 0%, 100%) solid;
 }
 
 .aboutmeHeader{
@@ -366,7 +365,7 @@ footer a:hover, a:focus{
   min-width: 100px;
   height: auto;
   border-radius: 50%;
-  border: 5px double white;
+  border: 5px double hsl(0, 0%, 100%);
 } 
 
 .aboutmeFigure img:hover {
@@ -390,12 +389,16 @@ footer a:hover, a:focus{
   margin-top: 1rem;
 }
 
+.aboutmeParagraphs{
+  margin-bottom: 0.5rem;
+}
+
 .aboutmeFooter{
   width: 100%;
-  background-color: rgb(51, 61, 79);
+  background-color: hsl(219, 22%, 25%);
   padding: 5rem;
   text-align: center;
-  color: rgb(249, 245, 227); 
+  color: hsl(49, 65%, 93%); 
 }
 
 
@@ -409,31 +412,31 @@ footer a:hover, a:focus{
 }
 
 .aboutemeTable table, td{
-  border: 2px solid white;
+  border: 2px solid hsl(0, 0%, 100%);
   margin: 1rem;
   padding: 0.5rem
 }
 
 .aboutemeTable td:hover{
-  color: gray;
+  color: hsl(0, 0%, 50%);
 }
 
 .TableStyle{
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 
 
 .TableStyle a:visted {
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .TableStyle a:hover, a:focus{
-  color: rgb(210, 56, 133);
+  color: hsl(330, 63%, 52%);
 }
 
 .aboutmeBorder{
-  border: 5px solid white;
+  border: 5px solid hsl(0, 0%, 100%);
 }
 
 
