@@ -145,6 +145,10 @@ table th, table td {
     border-width: 0;
 }
 
+.color {
+    color: rgba(41, 112, 40, 0.829);
+}
+
 table tr th, table tr td {
     border-bottom: 1px solid var(--bg-dark-gray);
     border-right: 1px solid var(--bg-dark-gray);
