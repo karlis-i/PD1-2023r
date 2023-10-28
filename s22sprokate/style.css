@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6 ul, li, table, th, td, nav {
+nav {
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, h6 ul, li, table, th, td, nav {
 
 body {
     font-family: 'Pixelify Sans', sans-serif;
-    background-color: #f0f0f0;
+    background-color: lightpink;
 }
 
 .container {
