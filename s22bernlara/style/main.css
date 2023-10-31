@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* CSS reset*/
+}
+
+
+/* body configs */
+
+body {
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(186, 28%, 93%);
+  font-family: 'Expletus Sans', sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+/* header configs (inside body) */
+header { 
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 0%);
+  display: inline-block;
+  padding: 20%;
+  padding-left: 0;
+}  
+
+/* h1 configs (inside header) */
+h1 {
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+
+
+/* header configs (inside header) */
+ul {
+  margin-left: auto;
+  list-style: none;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+/* header configs (inside header) */
+li{
+  text-decoration: none;
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  border-right: 1px solid hsl(0, 0%, 50%);
+  padding: 0.5rem;
+}
+
+li:nth-child(3){
+  border-right: none;
+}
+
+li a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+li a:visited{
+  color: hsl(0, 0%, 100%);
+}
+
+li a:hover, a:focus{
+  color: hsla(43, 74%, 49%, 0.404);
+}
+
+/* introduction configs (inside body) */
+
+.welcome{
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.block{
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.welcome p {
+  text-align: center;
+}
+
+
+.welcome summary{
+  text-align: center;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.welcome summary:hover{
+  color: hsl(43, 74%, 49%);
+}
+
+summary::-webkit-details-marker {display: none; }
+
+details summary::before { 
+  content:"\02B50"; 
+  color: hsl(0, 0%, 100%); 
+}
+
+details[open] summary::before { 
+  content:"\01F4AB";  
+  color: hsl(0, 0%, 100%);
+}
+
+details p{
+  margin: 2rem;
+  margin-bottom: 0;
+  text-align: justify;
+  font-size: 1.1rem;
+  background-color: hsl(0, 0%, 0%);
+  font-weight: bolder;
+  line-height: 2rem;
+}
+
+.twinkle {
+  background-image: url('../extra/twinkle.gif'); /* configs of the gif */
+  padding: 10rem;
+}
+
+/* 2nd title configs (inside body) */
+.begin{
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: hsl(0, 0%, 0%);
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+/* cards configs (inside body) */
+
+.container{
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: space-evenly;
+}
+
+/* cards configs (inside container) */
+
+.card{
+  border: 1px solid hsl(43, 74%, 49%);
+  background-color: hsl(227, 42%, 20%);
+  margin: 0.5rem;
+  height: auto;
+  border-radius: 15px;
+  flex-shrink: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 150px 35px auto 80px;
+  grid-template-areas: 
+    "i"
+    "h"
+    "p"
+    "b";
+
+
+    min-width: 320px;
+    max-width: 350px;
+    min-height:auto;
+    max-height: auto;
+  }
+
+.cardImage{
+  grid-area: i;
+  background-image: url('../extra/background22.jpg');
+  background-size: cover;
+  height: 150px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-radius: 15px 15px 0 0;
+}
+
+.card h2 {
+  color: hsl(218, 17%, 62%);
+  grid-area: h;
+  font-size: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.card p {
+  color: hsl(218, 17%, 62%);
+  grid-area: p;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.button{
+  grid-area: b;
+  font-size: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  border:3px solid hsl(0, 0%, 0%);
+  background-color: hsl(43, 74%, 49%); 
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.button:hover{
+  background-color: hsl(31, 74%, 49%);
+  border-radius: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  display: block; /*last alterations */
+}
+
+button a:visited{
+  color:hsl(0, 0%, 0%);
+}
+
+button a:hover, a:focus{
+  color: hsl(0, 0%, 0%);
+}
+
+.card:hover{
+  background-color: hsl(228, 46%, 28%);
+  color: hsl(0, 0%, 66%);
+  cursor: pointer; 
+  transform: scale(1.03); /* makes cards a little bit larger when hovering */
+  transition: all 1s ease; /* all elements will transition in an easy manner in 1sec */
+ } 
+
+footer{
+  width: 100%;
+  background-color: hsl(219, 22%, 25%);
+  padding: 2rem;
+  text-align: center;
+  color: hsl(49, 65%, 93%);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-content: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+}
+
+footer a:visited{
+  color: hsl(0, 0%, 0%);
+}
+
+footer a:hover, a:focus{
+  color: hsl(43, 74%, 49%);
+}
+  
+
+/* celestial objects styling */
+
+.secondaryHeader{
+  padding: 0;
+  height: 100px;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.secondaryHeader h1{
+  padding-top: 1.5rem;
+}
+
+.secondaryMain{
+  padding: 0.5rem;
+}
+
+.secondaryMain p{
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+.secondaryMain h2 {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.secondaryFooter{
+  width: 100%;
+  background-color: hsl(219, 22%, 25%);
+  padding: 5rem;
+  text-align: center;
+  color: hsl(49, 65%, 93%); 
+}
+
+.secondaryFigure{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.secondaryFigure img{
+  border: 5px solid hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  width: 55%;
+  height: auto;
+}
+
+.secondaryFigure img:hover{
+    transform: scale(1.05); 
+    transition: all 1s ease; 
+   } 
+
+  
+
+/* styling of the about me section */
+
+
+.aboutmeBody{
+  width: 100%;
+  margin: 5px hsl(0, 0%, 100%) solid;
+}
+
+.aboutmeHeader{
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.aboutmeH1{
+  font-size: 3rem;
+}
+
+.aboutmeFigure{
+  margin-top: 0.5rem; 
+  width: 25%;
+}
+
+.aboutmeFigure img{
+  width: 100%;
+  min-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px double hsl(0, 0%, 100%);
+} 
+
+.aboutmeFigure img:hover {
+  transform: scale(1.03); 
+  transition: all 1s ease; 
+}
+
+.noWrap{
+  white-space: nowrap;
+}
+
+.offScreen{
+  position: absolute;
+  left: -100000px;
+}
+
+.aboutmeMain{
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.aboutmeParagraphs{
+  margin-bottom: 0.5rem;
+}
+
+.aboutmeFooter{
+  width: 100%;
+  background-color: hsl(219, 22%, 25%);
+  padding: 5rem;
+  text-align: center;
+  color: hsl(49, 65%, 93%); 
+}
+
+
+.aboutmeTable{
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.aboutemeTable table, td{
+  border: 2px solid hsl(0, 0%, 100%);
+  margin: 1rem;
+  padding: 0.5rem
+}
+
+.aboutemeTable td:hover{
+  color: hsl(0, 0%, 50%);
+}
+
+.TableStyle{
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+
+.TableStyle a:visted {
+    color: hsl(0, 0%, 100%);
+}
+
+.TableStyle a:hover, a:focus{
+  color: hsl(330, 63%, 52%);
+}
+
+.aboutmeBorder{
+  border: 5px solid hsl(0, 0%, 100%);
+}
+
+
+@media (max-width: 707px){
+   header h1 {
+    font-size: 2rem;
+  }
+
+  ul li{
+    font-size: 0.8rem;
+  }
+
+  li:nth-child(1){
+    padding-left: 0;
+  }
+
+  .welcome p {
+    font-size: 0.8rem;
+  }
+
+  .welcome summary{
+    visibility: hidden;
+  }
+
+  .begin{
+    font-size: 2rem;
+  }
+
+}
