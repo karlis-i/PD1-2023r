@@ -1,0 +1,151 @@
+nav {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: lightpink;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: lightpink;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    align-content: center;
+}
+
+main {
+    margin: 20px;
+}
+
+.main-text p {
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+em {
+    font-style: italic;
+}
+
+ol, table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #FF81B1;
+}
+ul {
+    padding: 0;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.photo-gallery img {
+    width: 700;
+    height: 350px;
+}
+
+@media (max-width: 768px) {
+    .photo-gallery {
+        display: block;
+        /* Change display to block for a column layout */
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .photo-gallery img {
+        max-width: 100%;
+        /* Make images take full width of the container */
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
