@@ -1,0 +1,224 @@
+:root {
+    --white: white;
+    --text-black: black;
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-heading: 'Nunito Sans', sans-serif;
+    --bg-light-gray: #ececec;
+    --bg-dark-gray: #333;
+    --text-green: green;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+html {
+    font-family: var(--font-default);
+    font-size: 14px;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+body {
+    background-color: black;
+}
+
+.Wrapper {
+    font-weight: bold;
+    font-size: large;
+    color: var(--text-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: var(--white);
+}
+.lead1{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+}
+nav {
+    text-align: right;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li::after {
+    content: "\00B7";
+}
+
+nav ul li:last-child::after {
+    content: "";
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: var(--text-black);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--white);
+    color: var(--text-black);
+    padding: 4rem 0;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+footer p {
+    margin-left: 8rem;
+    font-family: var(--font-heading);
+
+}
+
+.main h3 {
+    text-align: center;
+}
+
+.sellout h3,
+.sellout h2 {
+    text-align: center;
+}
+
+.sellout ul {
+    margin: 4rem;
+    padding: 4rem;
+}
+
+.sellout ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    background-color: black;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.carousel{
+    margin: 0 auto;
+    max-width: 90%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    padding: 5px;
+    width: 400px;
+    margin-top: 10px;
+    height: 300px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+main.container {
+    max-width: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    width: 90%;
+    
+    margin: 30px auto;
+    
+
+}
+table th, table td {
+    border-width: 0;
+}
+table tr th, table tr td {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0.25rem 0.5rem;
+}
+table tr th:last-child, table tr td:last-child {
+    border-right: none;
+}
+table tr:last-child th, table tr:last-child td {
+    border-bottom: none;
+}
+table tr {
+    text-align: left;
+    background-color: black;
+    color: var(--white);
+}
+.first-column {
+
+    background-color: white;
+    color: black;
+}
+
+.second-column {
+    background-color: rgb(20, 20, 20);
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item {
+        height: 200px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .carousel{
+        max-width: 100%;
+    }
+    .Wrapper {
+
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    nav, header {
+        margin: 0 auto;
+        text-align: center;
+    }
+    table{
+        width: 100%;
+    }
+    footer p {
+        margin-left: 1rem;
+    }
+    main.container{
+        max-width: 100%;
+    }
+
+}
