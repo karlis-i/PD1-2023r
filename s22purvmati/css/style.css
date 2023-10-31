@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: rgb(26, 26, 26);
+  --seconday-color: rgb(255, 156, 172);
+  --white: rgb(238, 238, 238);
+  --font-default: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-default);
+  color: var(--primary-color);
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+}
+
+img {
+  height: 100%;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+p,
+label {
+  font-size: 0.85rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--primary-color);
+  text-decoration: none;
+  background-color: var(--white);
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--primary-color);
+  transition: 0.5s ease-in-out border-radius;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-radius: 0.5rem;
+}
+
+/*
+
+  HEADER
+
+*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 0.25rem 0;
+}
+
+header img {
+  width: 3rem;
+}
+
+/* 
+
+  NAVIGATION
+
+*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--seconday-color);
+  height: 4rem;
+  padding: 0 0.25rem;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/*
+
+  MAIN
+
+*/
+
+main article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 18rem;
+  background-color: var(--primary-color);
+  padding: 0 1rem;
+}
+
+main article h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+main article p {
+  color: var(--white);
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+main aside h2 {
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+.customer-table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.customer-table td,
+.customer-table th {
+  padding: 0.5rem;
+}
+
+.customer-table th {
+  background-color: var(--seconday-color);
+  text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color),
+    1px 0 var(--primary-color), 0 -1px var(--primary-color);
+  color: var(--white);
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.customer-table tr {
+  text-align: center;
+}
+
+.customer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.customer-table tr:hover {
+  background-color: var(--white);
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding: 0 1rem;
+}
+
+.main-section h2 {
+  color: var(--white);
+  margin: 1rem 0;
+}
+
+.sub-section {
+  border: 1px solid var(--seconday-color);
+  width: 100%;
+  background-color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.sub-section h3 {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.sub-section p {
+  color: var(--primary-color);
+}
+
+/* 
+
+  FOOTER
+
+*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--seconday-color);
+  padding: 0 1rem;
+}
+
+footer p {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+footer form {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+footer form h2 {
+  margin: 1rem 0;
+  color: var(--primary-color);
+}
+
+footer form label {
+  color: var(--primary-color);
+}
+
+footer form input,
+textarea {
+  font-family: inherit;
+  background-color: var(--white);
+  border: 1px solid var(--primary-color);
+  font-size: 0.8rem;
+  width: 80%;
+  height: 1.5rem;
+  transition: 0.5s ease-in-out border-radius;
+}
+
+footer form input:focus,
+textarea:focus {
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+footer form input:hover,
+textarea:hover {
+  border-radius: 0.5rem;
+}
+
+footer form input:last-child {
+  margin-bottom: 1rem;
+}
+
+footer form textarea {
+  resize: none;
+  width: 80%;
+  height: 5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 992px;
+  }
+}
