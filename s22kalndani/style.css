@@ -33,7 +33,7 @@ nav {
     color: #41403e;
     cursor: pointer;
     display: inline-block;
-    font-family: Neucha, sans-serif;
+    font-family: sans-serif;
     font-size: 1rem;
     line-height: 23px;
     outline: none;
@@ -110,22 +110,23 @@ table tr th, table tr td {
     padding: 0.25rem 0.5rem;
 }
 .random-picture1{
-display: block;
+    display: block;
 
     width: 100%;
 
 }
 .random-picture2{
     
-        width: 80%;
+    width: 80%;
     
     }
-    .random-picture3{
-        display: block;
 
-            width: 100%;
+.random-picture3{
+ display: block;
+
+    width: 100%;
         
-        }
+}
 
 
 table tr th {
@@ -217,22 +218,47 @@ article figure img {
     width: 100%;
 }
 
-article figure figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    display: block;
-    width: 100%;
-    padding: 0.5rem 1rem;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--white);
-    font-family: var(--font-heading);
+.formcontainer{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+.form-group {
+   
+    margin: 10px 0;
 }
 
+label {
+    display: block;
+    font-weight: bold;
+}
 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
+input[type="submit"] {
+    background-color: #f87eab;
+    color: #212121;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #212121;
+}
 @media screen and (min-width: 992px) {
 
     html {
@@ -281,3 +307,5 @@ article figure figcaption {
     }
 
 }
+
+
