@@ -1,277 +1,132 @@
+
 <!doctype html>
 <html lang="lv">
-
-<head>
+ <head>
     <meta charset="utf-8">
     <title>1st Practical Project</title>
-    <meta name="description" content="Ventspils Augstskolas 2023. gada pavasara semestra HTML + CSS praktiskie darbi">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="This is an HTML document by Rudolfs
+   Taurins">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
 
-    <div class="bg-light mb-4 py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <header class="navbar bg-light">
-                        <span class="navbar-brand mb-0 h1">HTML + CSS</span>
-                    </header>
-                </div>
-            </div>
+        <!-- header -->
+        <header>
+         <div class="container">
+                <p class="lead">1st Practical Project</p>
+                <p class="sub">Ventspils University of Applied Sciences</p>
         </div>
+    </header>
+
+ <!-- navigation -->
+ <nav>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="https://www.venta.lv/" target="_blank">VeA</a>
+            </li>
+            <li>
+                <a href="https://validator.w3.org/" target="_blank">W3 Validator</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/enUS/docs/Web/HTML/Element" target="_blank">HTML reference</a>
+             </li>
+            <li>
+                <a href="https://git-scm.com/" target="_blank">Git</a>
+            </li>
+        </ul>
+    </div>
+ </nav>
+ <!-- content -->
+ <main class = "container">
+    <div class="flexbox-columns">
+
+        <article>
+            <h1>Motorcycles</h1>
+
+        <figure>
+            <img src="https://images.vc/thumb/cZ0/title.jpg"/>
+            <figcaption></figcaption>
+        </figure>
+
+            <p>A motorcycle is a two-wheeled vehicle with an engine. Motorcycles are bigger, heavier, and much faster than bicycles, but they have many similar parts. Like bicycles, motorcycles are often called bikes. </p>
+            <p>Motorcycles are a common form of transportation throughout the world. People also ride them in races or just for fun. </p>
+        </article>
+
+        <aside>
+
+        <h2>Motorcycle stats</h2>
+            <table>
+
+                <tr>
+                    <th>NAME</th>
+                    <th>CUBES</th>
+                </tr>
+
+                <tr>
+                    <td>KAWASAKI NINJA H2</td>
+                    <td>1000cc</td>
+                </tr>
+
+                <tr>
+                    <td>HONDA CBR</td>
+                    <td>1000cc</td>
+                </tr>
+
+                <tr>
+                <td>YAMAHA R6</td>
+                <td>600cc</td>
+                </tr>
+
+            </table>
+
+        </aside>
+
     </div>
 
+    <section>
+        <h2>THE BEST BEST Main motorcycles</h2>
 
+        <div class="related-content">
 
-    <div class="container mb-4">
-        <div class="row">
-            <main class="col-md-6 offset-md-3">
+        <section class="related-panel">
+            <h3>KAWASAKI Ninja H2</h3>
+            <img src="https://images.vc/thumb/fAg/Kawasaki Ninja H2.jpg"/>
+        <p>This machine is not for beginners, as it is packed with a 998 cc supercharged engine that 
+        delivers horsepower and 121 lb-ft of torque! With a lightweight chassis and aerodynamic bodywork, the Ninja H2R is built for speed and performance, whether on the track or cruising on the open road.
+        .</p>
+        </section>
 
-                <h1>1<sup>st</sup> Practical Project</h1>
+        <section class="related-panel">
+           <h3>HONDA CBR</h3>
+           <img src="https://images.vc/thumb/fAh/Honda cbr.jpg"/>
+        <p>The Honda CBR1000RR, marketed in some countries as the "Fireblade" 
+        (capitalized as FireBlade until the 2000s[2]), is a 999 cc (61.0 cu in) 
+        liquid-cooled inline four-cylinder superbike, introduced by Honda in 2004 as the 7th generation of the CBR series of motorcycles that began with the CBR900RR in 1990.</p>
+        </section>
 
-                <p class="lead">HTML + CSS practical works of Ventspils University of Applied Sciences, 2023 Autumn semester</p>
-
-                <ul>
-                    <li><a href="#itb">2 ITB</a></li>
-                    <li><a href="#itb-en">2 ITB-EN</a></li>
-                </ul>
-
-                <h2 id="itb">2 ITB</h2>
-                <table class="table table-sm table-striped table-hover mb-5">
-                    <tbody>
-                        <tr>
-                            <td>
-                                Daniels Balika
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kristers Berents
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Endijs Bertāns
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kurts Folkmanis
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Marta Tīna Garde
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Pēteris Genrihs
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Klāvs Grīnvalds
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Daniels Kalnavs
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kristiāns Kokars
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Anatolijs Koļesņevs
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Jēkabs Konošonoks
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Mihails Kostjuks
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Elvijs Leistmanis
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Rūdolfs Toms Mežulis
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kintija Mūrniece
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Eduards Pastars
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Jānis Krists Platais
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Tatjana Poļežaičenko
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Tatjana Prudņikova
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Markuss Puhovs
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Matīss Purviņš
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kristers Rukmanis
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Deniss Solovjovs
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kate Sproģe
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Eduards Stulpe
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Rūdolfs Tauriņš
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kārlis Zvejnieks
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./karlis.immers/index.html">Kārlis Immers</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <h2 id="itb-en">2 ITB-EN</h2>
-                <table class="table table-sm table-striped table-hover mb-5">
-                    <tbody>
-                        <tr>
-                            <td>
-                                Davyd Akimov
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Annija Aumale
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Lara Cecilia Bernardes de Souza
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Igors Gončarovs
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Mariia Hrinke
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Mykhailo Yankovskyi
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Kelechukwu Agnes Iloghalu
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Viktors Niks Kokins
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Selvam Sethupathi
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Mykyta Sydoruk
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Anton Volkov
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Andrii Zaporozhets
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./karlis.immers/index.html">Kārlis Immers</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </main>
+        <section class="related-panel">
+            <h3>YAMAHA R6</h3>
+            <img src="https://images.vc/thumb/cZ1/YAMAHA R6.jpg"/>
+        <p>The R6 was the world's first 600 cc production 
+        four-stroke motorcycle producing over 100 hp (75 kW) in stock form. 
+        The YZF-R6 has been revised several times since its introduction. Starting with the 2003 model, when the R6 became fuel injected.</p>
         </div>
-    </div>
+        </section>
+    </main>
 
 
-
-    <div class="bg-secondary text-white py-4 mt-4">
-        <div class="container">
-            <div class="row">
-                <footer class="col-md-6 offset-md-3">
-                    Ventspils Augstskola, 2023
-                </footer>
-            </div>
+ <!-- footer -->
+    <footer>
+    <div class="container">
+        <p>Rūdolfs Tauriņš, 2023</p>
         </div>
-    </div>
+    </footer>
 
-</body>
+    </body>
 
 </html>
