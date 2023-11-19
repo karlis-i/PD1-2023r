@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a 1st Practical Project by Deniss Solovjovs."
+    />
+    <!-- FAVICONS -->
+    <link rel="icon" href="img/icons/favicon.png" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MY CSS STYLES -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- SCRIPTS: icons, smooth scroll for older iOS, JS code  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <!-- The rest -->
+    <title>Simpsons &mdash; 1st Practical Project</title>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="main-nav">
+        <a href="#" class="header-logo link">
+          <img class="logo" src="img/logo.png" alt="Simpsons logo" />
+        </a>
+        <ul class="nav-list list">
+          <li><a class="nav-link" href="#characters">Characters</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+          <li><a class="nav-link" href="#authors">Authors</a></li>
+          <li><a class="nav-link" href="#episodes">Episodes</a></li>
+        </ul>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </nav>
+      <div class="hero-content">
+        <h1 class="heading-primary">
+          Discover The Simpsons - A Timeless Comedy Classic!
+        </h1>
+        <p class="hero-description">
+          Looking for endless laughter, satire, and heartwarming moments? Look
+          no further than The Simpsons! Join the beloved Simpson family, headed
+          by the iconic Homer, Marge, Bart, Lisa, and Maggie, as they navigate
+          life's hilarities in the quirky town of Springfield.
+        </p>
+        <div class="hero-btns">
+          <a href="#episodes" class="btn --btn-full hero-btn">
+            <ion-icon class="hero-icon" name="play-outline"></ion-icon>
+            <span>Start Watching</span>
+          </a>
+          <a href="#characters" class="btn --btn-outlined hero-btn"
+            >Learn more &darr;</a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- CHARACTERS SECTION -->
+      <section class="section characters-section" id="characters">
+        <!-- CHARACTERS: SUBHEADING AND HEADING -->
+        <div class="container">
+          <span class="subheading">Characters</span>
+          <h2 class="heading-secondary">
+            Meet the Simpsons: Springfield's Quirkiest Family!
+          </h2>
+        </div>
+        <!-- CHARACTERS: FAMILY -->
+        <div class="container grid grid--2-cols">
+          <!-- HOMER -->
+          <div class="character-description-box">
+            <!-- HOMER -->
+            <h3 class="character-name heading-tertuary">Homer Simpson</h3>
+            <p class="character-description">
+              Homer, the bumbling patriarch of the Simpson family, is
+              Springfield's safety inspector at the nuclear power plant. With an
+              insatiable love for donuts and an endearing clumsiness, Homer's
+              comical escapades and iconic catchphrases make him a beloved
+              character.
+            </p>
+          </div>
+          <figure class="character-img-box go-up-later">
+            <img
+              src="img/characters/homer.jpeg"
+              alt="Homer Simpson profile image."
+            />
+          </figure>
+
+          <!-- MARGE -->
+          <figure class="character-img-box">
+            <img
+              src="img/characters/marge.jpg"
+              alt="Marge Simpson profile image."
+            />
+          </figure>
+          <div class="character-description-box">
+            <h3 class="character-name heading-tertuary">Marge Simpson</h3>
+            <p class="character-description">
+              Marge is the patient and nurturing matriarch, recognized by her
+              distinctive blue beehive. As a homemaker and part-time worker, she
+              keeps the Simpson household in order. Marge's gentle demeanor and
+              ability to find humor in chaos make her the grounding force within
+              the family.
+            </p>
+          </div>
+
+          <!-- BART -->
+          <div class="character-description-box">
+            <h3 class="character-name heading-tertuary">Bart Simpson</h3>
+            <p class="character-description">
+              Bart, the eldest son at the age of 10, is Springfield's resident
+              troublemaker. His mischievous antics, love for skateboarding, and
+              rebellious spirit often land him in hilarious predicaments, adding
+              a dose of excitement to the Simpson family dynamic.
+            </p>
+          </div>
+          <figure class="character-img-box go-up-later">
+            <img
+              src="img/characters/bart.jpg"
+              alt="Bart Simpson profile image."
+            />
+          </figure>
+
+          <!-- LISA -->
+          <figure class="character-img-box">
+            <img
+              src="img/characters/lisa.jpg"
+              alt="Lisa Simpson profile image."
+            />
+          </figure>
+          <div class="character-description-box">
+            <h3 class="character-name heading-tertuary">Lisa Simpson</h3>
+            <p class="character-description">
+              At the age of 8, Lisa is the intelligent and socially conscious
+              middle child. With a passion for playing the saxophone and
+              advocating for various causes, Lisa brings depth and a moral
+              compass to the family. Her academic prowess and pursuit of justice
+              make her a standout character in Springfield.
+            </p>
+          </div>
+
+          <!-- MAGGIE -->
+          <div class="character-description-box">
+            <h3 class="character-name heading-tertuary">Maggie Simpson</h3>
+            <p class="character-description">
+              The youngest member of the family, Maggie, is a toddler with a
+              penchant for sucking on her pacifier. Despite her age, Maggie
+              occasionally surprises everyone with her resourcefulness, adding
+              adorable moments to the Simpson family's daily adventures.
+            </p>
+          </div>
+          <figure class="character-img-box go-up-later">
+            <img
+              src="img/characters/maggie.jpg"
+              alt="Maggie Simpson profile image."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="faq-section section" id="faq">
+        <div class="container">
+          <span class="subheading">FAQ</span>
+          <h2 class="heading-secondary">
+            Unveiling Answers to Your Springfield Inquiries!
+          </h2>
+        </div>
+        <!-- ACCORDION COMPONENT -->
+        <div class="container accordion">
+          <!-- Q.1 -->
+          <div class="question-item faq-grid active">
+            <span class="question-number question small-heading">Q.1:</span>
+            <h3 class="question-title question small-heading">
+              Who are the main members of the Simpson family?
+            </h3>
+            <button class="faq-btns question small-heading">
+              <ion-icon class="faq-icon" name="arrow-down-outline"></ion-icon>
+              <ion-icon class="faq-icon" name="arrow-up-outline"></ion-icon>
+            </button>
+            <p class="question-answer">
+              The Simpson family consists of Homer (the father), Marge (the
+              mother), Bart (the eldest son), Lisa (the middle daughter), and
+              Maggie (the youngest daughter).
+            </p>
+          </div>
+
+          <!-- Q.2 -->
+          <div class="question-item faq-grid">
+            <span class="question-number question small-heading">Q.2:</span>
+            <h3 class="question-title question small-heading">
+              Where is the fictional town of Springfield located?
+            </h3>
+            <button class="faq-btns question small-heading">
+              <ion-icon class="faq-icon" name="arrow-down-outline"></ion-icon>
+              <ion-icon class="faq-icon" name="arrow-up-outline"></ion-icon>
+            </button>
+            <p class="question-answer">
+              The exact location of Springfield in "The Simpsons" is
+              deliberately kept ambiguous. The show's creator, Matt Groening,
+              chose the name because it's a common city name in the United
+              States.
+            </p>
+          </div>
+
+          <!-- Q.3 -->
+          <div class="question-item faq-grid">
+            <span class="question-number question small-heading">Q.3:</span>
+            <h3 class="question-title question small-heading">
+              How long has "The Simpsons" been on the air?
+            </h3>
+            <button class="faq-btns question small-heading">
+              <ion-icon class="faq-icon" name="arrow-down-outline"></ion-icon>
+              <ion-icon class="faq-icon" name="arrow-up-outline"></ion-icon>
+            </button>
+            <p class="question-answer">
+              "The Simpsons" made its debut on December 17, 1989. As of my last
+              knowledge update in January 2022, it holds the title of the
+              longest-running American sitcom and the longest-running American
+              animated program.
+            </p>
+          </div>
+
+          <!-- Q.4 -->
+          <div class="question-item faq-grid">
+            <span class="question-number question small-heading">Q.4:</span>
+            <h3 class="question-title question small-heading">
+              Who is the voice actor for Homer Simpson?
+            </h3>
+            <button class="faq-btns question small-heading">
+              <ion-icon class="faq-icon" name="arrow-down-outline"></ion-icon>
+              <ion-icon class="faq-icon" name="arrow-up-outline"></ion-icon>
+            </button>
+            <p class="question-answer">
+              Dan Castellaneta provides the voice for Homer Simpson. His iconic
+              portrayal of the character has contributed significantly to the
+              show's success.
+            </p>
+          </div>
+
+          <!-- Q.5 -->
+          <div class="question-item faq-grid">
+            <span class="question-number question small-heading">Q.5:</span>
+            <h3 class="question-title question small-heading">
+              Are there any real-life inspirations for characters in "The
+              Simpsons"?
+            </h3>
+            <button class="faq-btns question small-heading">
+              <ion-icon class="faq-icon" name="arrow-down-outline"></ion-icon>
+              <ion-icon class="faq-icon" name="arrow-up-outline"></ion-icon>
+            </button>
+            <p class="question-answer">
+              Many characters in "The Simpsons" are inspired by people that
+              creator Matt Groening knew growing up in Portland, Oregon.
+              Springfield Elementary School, for example, is named after
+              Groening's own high school.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTHORS / CREATORS -->
+      <section class="section authors-section" id="authors">
+        <div class="container">
+          <span class="subheading">Authors</span>
+          <h2 class="heading-secondary">
+            Meet the Visionaries Behind The Simpsons: Crafting Laughter and
+            Legacy
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="overflow-border">
+            <div class="carousel">
+              <!-- FIRST SLIDE -->
+              <div class="slide slide-1 grid grid--2-cols">
+                <div class="author-img-box">
+                  <img
+                    class="author-img"
+                    src="img/authors/Matt_Groening.jpg"
+                    alt="Matt Groening"
+                  />
+                </div>
+
+                <article class="author-text">
+                  <h3 class="name small-heading">Matt Groening</h3>
+                  <p class="biograpy">
+                    Matt Groening is the creator and cartoonist behind "The
+                    Simpsons." Born on February 15, 1954, in Portland, Oregon,
+                    Groening started his career with the comic strip "Life in
+                    Hell" before introducing the Simpson family in 1987. His wit
+                    and satirical take on American life have shaped the show's
+                    humor and cultural impact.
+                  </p>
+                </article>
+              </div>
+
+              <!-- SECOND SLIDE -->
+              <div class="slide slide-2 grid grid--2-cols">
+                <div class="author-img-box">
+                  <img
+                    class="author-img"
+                    src="img/authors/JamesLB.jpg"
+                    alt="Matt Groening"
+                  />
+                </div>
+                <article class="author-text">
+                  <h3 class="name small-heading">James L. Brooks</h3>
+                  <p class="biograpy">
+                    James Lawrence Brooks, born on May 9, 1940, is a co-creator
+                    and executive producer of "The Simpsons." With an extensive
+                    career in television and film, Brooks played a crucial role
+                    in bringing the animated series to life. His contributions
+                    to the show's storytelling and character development have
+                    been instrumental in its enduring success.
+                  </p>
+                </article>
+              </div>
+
+              <!-- THIRD SLIDE -->
+              <div class="slide slide-3 grid grid--2-cols">
+                <div class="author-img-box">
+                  <img
+                    class="author-img"
+                    src="img/authors/SamSimon.jpg"
+                    alt="Matt Groening"
+                  />
+                </div>
+                <article class="author-text">
+                  <h3 class="name small-heading">Sam Simon</h3>
+                  <p class="biograpy">
+                    Sam Simon (1955–2015) was a writer, producer, and director
+                    who co-developed "The Simpsons" with Matt Groening and James
+                    L. Brooks. His creative input during the early years of the
+                    show contributed to its distinctive style and humor. Simon's
+                    legacy extends beyond "The Simpsons," encompassing
+                    philanthropy and activism.
+                  </p>
+                </article>
+              </div>
+              <!-- BTN LEFT -->
+              <button class="author-btn author-btn-left">
+                <ion-icon
+                  class="author-icon"
+                  name="chevron-back-outline"
+                ></ion-icon>
+              </button>
+              <!-- BTN RIGHT -->
+              <button class="author-btn author-btn-right">
+                <ion-icon
+                  class="author-icon"
+                  name="chevron-forward-outline"
+                ></ion-icon>
+              </button>
+              <aside class="dots">
+                <button class="dot dot-active" data-slide="1">
+                  &NonBreakingSpace;
+                </button>
+                <button class="dot" data-slide="2">&NonBreakingSpace;</button>
+                <button class="dot" data-slide="3">&NonBreakingSpace;</button>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EPISODES SECTION -->
+      <section class="episodes-section" id="episodes">
+        <div class="container">
+          <span class="subheading">Episodes</span>
+          <h2 class="heading-secondary">
+            Embark on a Hilarious Odyssey! Join the Simpsons Family and Watch
+            Now!
+          </h2>
+        </div>
+        <!-- ACTUAL CONTENT -->
+        <article class="episodes-container">
+          <div class="best-episodes">
+            <h3 class="heading-tertuary">
+              Choose Your Pricing Plan and Start Enjoying the Show!
+            </h3>
+            <!-- TABLE -->
+            <table>
+              <thead>
+                <tr class="first">
+                  <th class="special"></th>
+                  <th class="special"></th>
+                  <th class="special"></th>
+                  <th rowspan="2" class="premium-dark plan">premium</th>
+                </tr>
+                <tr class="second">
+                  <th rowspan="2">Price table</th>
+                  <th class="plan basic-dark">basic</th>
+                  <th class="plan standard-dark">standard</th>
+                </tr>
+                <tr class="third">
+                  <th class="basic-light"><span class="price">$25</span></th>
+                  <th class="standard-light"><span class="price">$50</span></th>
+                  <th class="premium-dark"><span class="price">$75</span></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th>Character Access</th>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Episode Selection</th>
+                  <td>
+                    <ion-icon
+                      class="cross-icon"
+                      name="close-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Exclusive Content</th>
+                  <td>
+                    <ion-icon
+                      class="cross-icon"
+                      name="close-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Interactive Features</th>
+                  <td>
+                    <ion-icon
+                      class="cross-icon"
+                      name="close-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="cross-icon"
+                      name="close-outline"
+                    ></ion-icon>
+                  </td>
+                  <td>
+                    <ion-icon
+                      class="checkmark-icon"
+                      name="checkmark-outline"
+                    ></ion-icon>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <th>
+                    <span class="subscribe-text">Subscribe now!</span>
+                    <ion-icon
+                      class="subscribe-icon"
+                      name="arrow-redo-outline"
+                    ></ion-icon>
+                  </th>
+                  <th class="basic-light">
+                    <button class="sign-up basic-dark">Sign Up</button>
+                  </th>
+                  <th class="standard-light">
+                    <button class="sign-up standard-dark">Sign Up</button>
+                  </th>
+                  <th class="premium-light">
+                    <button class="sign-up premium-dark">Sign Up</button>
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <!-- WATCH NOW CONTENT -->
+          <div class="watch-now">
+            <h3 class="heading-tertuary">
+              Explore Our Free Content: A Sneak Peek Before You Decide!
+            </h3>
+            <!-- CARDS -->
+            <div class="episodes-cards">
+              <!-- CARD ONE -->
+              <article class="episode-card">
+                <div class="img-box">
+                  <img
+                    src="img/episodes/episode-1.jpg"
+                    alt="Title"
+                    class="episode-img"
+                  />
+                  <div class="gradient-overlay"></div>
+                  <a href="" class="watch-link-button"
+                    ><ion-icon
+                      class="watch-link-icon"
+                      name="caret-forward-outline"
+                    ></ion-icon
+                  ></a>
+                </div>
+                <div class="episode-info">
+                  <span class="episode-name">Marge vs. Monorail</span>
+                  <p class="episode-description">
+                    Marge leads a fight against the construction of a faulty
+                    monorail system in Springfield, resulting in a hilarious,
+                    unexpected and a very chaotic adventure.
+                  </p>
+                  <ul class="episode-facts list">
+                    <li class="fact">
+                      <ion-icon
+                        class="episode-icon season-icon"
+                        name="calendar-clear-outline"
+                      ></ion-icon>
+                      <span>Season: 4</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="episode-icon episode-num-icon"
+                        name="caret-forward-circle-outline"
+                      ></ion-icon
+                      ><span>Episode: 12</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="rating-icon episode-icon"
+                        name="ribbon-outline"
+                      ></ion-icon>
+                      <span>Rating: <strong>9</strong>/10</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="view-icon episode-icon"
+                        name="eye-outline"
+                      ></ion-icon
+                      ><span>Views: 10k</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <!-- CARD TWO -->
+              <article class="episode-card">
+                <div class="img-box">
+                  <img
+                    src="img/episodes/episode-2.jpg"
+                    alt="Title"
+                    class="episode-img"
+                  />
+                  <div class="gradient-overlay"></div>
+                  <a href="" class="watch-link-button"
+                    ><ion-icon
+                      class="watch-link-icon"
+                      name="caret-forward-outline"
+                    ></ion-icon
+                  ></a>
+                </div>
+                <div class="episode-info">
+                  <span class="episode-name">Homer's Phobia</span>
+                  <p class="episode-description">
+                    Homer befriends a gay man named John, leading to humorous
+                    situations and a satire on stereotypes, while challenging
+                    Homer's perceptions.
+                  </p>
+                  <ul class="episode-facts list">
+                    <li class="fact">
+                      <ion-icon
+                        class="episode-icon season-icon"
+                        name="calendar-clear-outline"
+                      ></ion-icon
+                      ><span>Season: 8</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="episode-icon episode-num-icon"
+                        name="caret-forward-circle-outline"
+                      ></ion-icon
+                      ><span>Episode: 15</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="rating-icon episode-icon"
+                        name="ribbon-outline"
+                      ></ion-icon>
+
+                      <span>Rating: <strong>10</strong>/10</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="view-icon episode-icon"
+                        name="eye-outline"
+                      ></ion-icon
+                      ><span>Views: 15k</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <!-- CARD THREE -->
+              <article class="episode-card">
+                <div class="img-box">
+                  <img
+                    src="img/episodes/episode-3.jpg"
+                    alt="Title"
+                    class="episode-img"
+                  />
+                  <div class="gradient-overlay"></div>
+                  <a href="" class="watch-link-button"
+                    ><ion-icon
+                      class="watch-link-icon"
+                      name="caret-forward-outline"
+                    ></ion-icon
+                  ></a>
+                </div>
+                <div class="episode-info">
+                  <span class="episode-name">Treehouse of Horror</span>
+                  <p class="episode-description">
+                    The fifth Halloween special features three spooky tales,
+                    including parodies of classic horror stories like "The
+                    Shining" and "A Nightmare on Elm Street.
+                  </p>
+                  <ul class="episode-facts list">
+                    <li class="fact">
+                      <ion-icon
+                        class="episode-icon season-icon"
+                        name="calendar-clear-outline"
+                      ></ion-icon
+                      ><span>Season: 6</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="episode-icon episode-num-icon"
+                        name="caret-forward-circle-outline"
+                      ></ion-icon
+                      ><span>Episode: 6</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="rating-icon episode-icon"
+                        name="ribbon-outline"
+                      ></ion-icon>
+                      <span>Rating: <strong>8</strong>/10</span>
+                    </li>
+                    <li class="fact">
+                      <ion-icon
+                        class="view-icon episode-icon"
+                        name="eye-outline"
+                      ></ion-icon>
+                      <span>Views: 9k</span>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="logo-col">
+          <a href="#" class="footer-logo link">
+            <img class="logo" src="img/logo.png" alt="Simpsons logo" />
+          </a>
+        </div>
+        <div class="info">
+          <h4 class="footer-heading">Information</h4>
+          <ul class="list footer-list">
+            <li>
+              <span class="footer-text"
+                >Name &mdash; 1st Practical Project</span
+              >
+            </li>
+            <li>
+              <span class="footer-text">Subject &mdash; Web Technologies</span>
+            </li>
+            <li>
+              <span class="footer-text"
+                >Ventspils University of Applied Sciences</span
+              >
+            </li>
+            <li>
+              <span class="footer-text">Author &mdash; Deniss Solovjovs</span>
+            </li>
+          </ul>
+        </div>
+        <div class="useful-resources">
+          <h4 class="footer-heading">Web Tools</h4>
+          <ul class="footer-list list">
+            <li>
+              <a class="footer-text" href="https://ionic.io/" target="_blank"
+                >Ionicons</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-text"
+                href="https://yeun.github.io/open-color/"
+                target="_blank"
+                >Open Color</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-text"
+                href="https://maketintsandshades.com/"
+                target="_blank"
+                >Tint and Shade Generator</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-text"
+                href="https://coolors.co/contrast-checker/112a46-acc8e5"
+                target="_blank"
+                >Color Contrast Checker
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="more">
+          <h4 class="footer-heading">More</h4>
+          <ul class="footer-list list">
+            <li>
+              <a
+                class="footer-text"
+                href="https://www.venta.lv/"
+                target="_blank"
+                >VeA</a
+              >
+            </li>
+            <li>
+              <a class="footer-text" href="https://validator.w3.org/"
+                >W3 Validator</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-text"
+                href="https://developer.mozilla.org/en-US/"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+            <li>
+              <a class="footer-text" href="https://git-scm.com/" target="_blank"
+                >Git
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

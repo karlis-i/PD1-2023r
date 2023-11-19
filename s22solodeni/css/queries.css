@@ -1,0 +1,397 @@
+@media (max-width: 1500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .episodes-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 9.6rem;
+    align-items: center;
+    max-width: 120rem;
+  }
+
+  .best-episodes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .watch-now {
+    text-align: center;
+  }
+
+  .watch-now .heading-tertuary {
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-link {
+    font-size: 2.4rem;
+  }
+
+  .main-nav {
+    padding-left: 8rem;
+  }
+
+  .hero-content {
+    left: 8rem;
+  }
+
+  .hero-description {
+    max-width: 45rem;
+  }
+
+  .section {
+    padding: 8rem 0;
+  }
+}
+
+@media (max-width: 910px) {
+  .main-nav {
+    padding-left: 3.2rem;
+  }
+
+  .hero-content {
+    left: 3.2rem;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .hero-description {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 865px) {
+  .hero {
+    background-position: 35%;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  .header-logo {
+    z-index: 2;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(80, 172, 247, 0.282);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(11px);
+
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 8rem;
+
+    transform: translateX(100%);
+    transition: all 400ms ease-in;
+    opacity: 0;
+    pointer-events: none;
+    /* visibility for screenreaders */
+    visibility: hidden;
+  }
+
+  .sticky .nav-list {
+    background-color: rgba(8, 74, 128, 0.6);
+  }
+
+  .nav-open .nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-link {
+    font-size: 4.8rem;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .slide {
+    padding: 0 4.8rem 0 9.6rem;
+  }
+}
+
+@media (max-width: 785px) {
+  .faq-section {
+    height: auto;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  /* CAROUSEL */
+  .character-img-box {
+    width: 80%;
+  }
+
+  .overflow-border {
+    max-width: 70rem;
+    height: 75rem;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 90%;
+    padding: 3.2rem 0;
+  }
+
+  .slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 4.8rem 0 4.8rem;
+    row-gap: 0;
+    align-items: end;
+    height: auto;
+    gap: 3.6rem;
+    text-align: center;
+  }
+
+  .author-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .author-img {
+    transform: scale(1);
+    height: 35rem;
+    width: 35rem;
+  }
+
+  .author-text {
+    padding: 0;
+  }
+
+  .dots {
+    top: 105%;
+  }
+
+  /* CARDS */
+
+  .episodes-cards {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .episode-card:last-child {
+    grid-column: 1 / span 2;
+    align-self: 100%;
+    width: 45%;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: auto 1fr 1fr;
+    row-gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .logo-col {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-grid div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .characters-section .grid {
+    grid-template-columns: 1fr;
+    row-gap: 9.6rem;
+  }
+
+  .characters-section .grid figure:first-of-type {
+    grid-row: 1;
+  }
+
+  .characters-section .grid figure:nth-of-type(3) {
+    grid-row: 5;
+  }
+
+  .characters-section .grid figure:last-of-type {
+    grid-row: 9;
+  }
+
+  .characters-section .grid figure {
+    transform: translateY(10%);
+    width: 65%;
+  }
+}
+
+@media (max-width: 570px) {
+  /* HERO */
+  .hero-content {
+    top: 50%;
+  }
+
+  .hero-content .heading-primary {
+    font-size: 4.4rem;
+    margin-bottom: 6.2rem;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+  }
+
+  .hero .btn {
+    font-size: 2rem;
+    padding: 2rem 2rem;
+  }
+
+  /* CAROUSEL */
+  .overflow-border {
+    height: 85rem;
+  }
+
+  /* CARDS */
+  .episodes-cards {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .episode-card {
+    grid-column: 1 / span 1 !important;
+    width: 70% !important;
+  }
+
+  .episode-card::before {
+    top: 5%;
+    right: -20%;
+  }
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1.3fr 1fr;
+    row-gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .logo-col {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .info {
+    grid-row: 2;
+  }
+
+  .footer-grid div {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .hero-description {
+    max-width: 30rem;
+    font-size: 2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .--btn-outlined {
+    text-align: center;
+  }
+
+  .slide {
+    padding: 0 2rem;
+  }
+
+  .author-btn {
+    top: 55%;
+  }
+
+  .episodes-container {
+    padding: 0 0;
+  }
+
+  .episodes-container .heading-tertuary {
+    padding: 0 3.2rem;
+    text-align: center;
+  }
+
+  table {
+    max-width: 45rem;
+    font-size: 2.4rem;
+  }
+
+  .second th:first-child {
+    font-size: 3rem;
+  }
+
+  .price {
+    font-size: 4rem;
+  }
+
+  .basic-light .price {
+    display: inline-block;
+    width: 9.5rem;
+  }
+
+  .subscribe-text {
+    font-size: 2rem;
+  }
+
+  .sign-up {
+    font-size: 1.6rem;
+    padding: 1.6rem 1.6rem;
+  }
+}
