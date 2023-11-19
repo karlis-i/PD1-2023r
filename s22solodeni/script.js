@@ -11,7 +11,7 @@ const charactersSection = document.querySelector('.characters-section');
 const navBar = document.querySelector('.main-nav');
 
 const implementSticky = function () {
-  if (window.scrollY >= charactersSection.offsetTop - navBar.offsetHeight) {
+  if (window.scrollY >= charactersSection.offsetTop - 70) {
     navBar.classList.add('sticky');
   } else {
     navBar.classList.remove('sticky');
