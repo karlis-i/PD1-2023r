@@ -1,0 +1,350 @@
+:root {
+        --text-main: #212121;    
+        --text-green: #006540;     
+        --white: #fff;     
+        --bg-light-gray:#ececec;     
+        --bg-dark-gray: #4c4c4e;
+        --brown:var(--brown);
+        --font-default:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        --font-heading: 'Grandstander', cursive;
+        
+}
+*{
+        box-sizing: border-box;
+}
+html{
+        font-family:var(--font-default);
+        font-size: 14px;
+        color: var(--text-main);
+        line-height: 1.5;
+}
+
+body{
+        margin: 0;
+}
+img{
+        max-width: 100%;
+}
+.container{
+        padding: 0 0.5rem;
+}
+h3, p {
+        font-family:'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0;
+        
+        color: var(--bg-dark-gray), var(--bg-light-gray);
+}
+h1{
+        text-align: center;
+        padding: 1em 0;
+        font-size: 1.8rem;
+        font-weight:700;
+        background-color: brown;
+        color: var(--white) 
+}
+h2{
+        text-align: center;
+        padding: 1em 0;
+        font-size: 1.5rem;
+        font-weight:700;
+        background-color: brown;
+        color:white;   
+}
+
+ul,ol{
+        font-family:'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: var(--bg-dark-gray), var(--bg-light-gray);
+        
+        
+
+}
+em{
+
+        width: 80%;
+        height: auto;
+        margin: .5em auto;
+        padding: .5em;
+        line-height: 1.5;
+        font-style: italic;
+        font-size: 1.2rem;
+        color: Brown;
+}
+
+
+
+
+
+header{
+        background-color: var(--text-green); 
+        background:linear-gradient(135deg, #007b4d 0%, #002e1e 100%) ;   
+        color: var(--white);     
+        padding: 4rem 0;
+        text-align: center; 
+}
+footer{
+        background-color: var(--text-green);          
+        color: var(--white);            
+        padding: 1rem ;     
+        margin-top: 1rem; 
+        text-align: left;
+}
+header p, footer p {
+        margin: 0;
+        font-family: var(--font-heading);
+}
+
+nav  {
+        background-color: var(--bg-light-gray);    
+        color: var(--text-green);    
+        display:block;
+        padding:1rem;
+        
+}
+
+.header{
+        padding: 50px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+
+}
+
+nav ul{
+        margin: 0;
+        padding: 0;
+        
+}
+nav ul li {
+        list-style-type: none;
+        display:inline-block;
+}
+nav ul li a {
+        color: black;
+}
+
+nav li a {
+        text-align: center;
+        font-family: Roboto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: white;
+
+}
+
+
+nav ul li::after{
+        content: "\2693";
+
+}
+nav ul li:last-child::after{
+        content:"";
+
+}
+
+
+.active {
+        background-color:#006540;
+}  
+li a:hover:not(.active) {
+        background-color: darkgray; 
+}     
+
+
+
+
+
+article figure{
+        display: block;
+        width: 100%;
+        margin:0;
+        position: relative;
+}
+article  figure img{
+        display:grid;
+        width: 100%;
+        height: auto;
+
+        
+}
+article figure figcaption{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+
+
+
+        font-family: var(--font-heading);
+        color:brown;
+        background-color: rgba(0,0,0,0.5);
+}
+table {
+        border-collapse: collapse;     
+        border: 1px solid var(--bg-dark-gray);     
+        width: 100%; 
+
+}
+table th, table td {
+        border-width: 0;
+
+}
+table tr th, table tr td {
+        border-bottom: 1px solid var(--bg-dark-gray);     
+        border-right: 1px solid var(--bg-dark-gray);     
+        padding: 0.25rem 0.5rem; 
+
+}
+table tr th:last-child, table tr td:last-child{
+        border-right: none;
+}
+table tr:last-child th, table tr:last-child td {
+        border-bottom:none;
+}
+table tr th {
+        text-align: left;     
+        background-color: var(--text-green);     
+        color: var(--white); 
+
+}
+table tr:nth-of-type(odd) td {
+        background-color: var(--bg-light-gray);
+}
+table tr:hover td {
+        background-color: var(--text-green);
+        color: var(--white);
+}
+
+header a {
+        text-decoration:solid;
+        color: black;
+}
+header p.lead{
+        font-size: 2rem;     
+        font-weight: bold;     
+        font-variant: small-caps; 
+}
+header p.sub{
+        font-size: 1.5rem;     
+        font-style: italic;     
+        opacity: 0.33; 
+}
+
+.dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+}
+
+.dropdown {
+        position: relative;
+        display: inline-block;
+} 
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+}
+
+.dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+}
+
+.dropdown-content a:hover {
+        background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+        display: block;
+}
+
+.dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+
+} 
+   
+
+#about{
+        background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codethewb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+}        
+#products{
+        background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codethewb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+}
+#benefits{
+        background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codethewb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+}        
+
+@media  screen and (min-width: 992px) {
+
+        html {          
+
+                
+                font-size: 16px; 
+                
+        }   
+
+        main {     
+                
+                padding: 0; 
+                
+        }  
+        .container {
+                display: block;
+                width: 992px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
+        }    
+        
+        
+
+        /*flexbox */
+        .flexbox-columns {
+                
+                display: flexbox;     
+                
+                flex-direction: row;     
+                
+                flex-wrap: nowrap;     
+                
+                gap: 1rem;     
+                
+                justify-content: space-between;     
+                
+                align-items: stretch; 
+        
+       
+        }
+        
+        .flexbox-columns > article {
+                
+                flex: 2;
+        }
+        
+        .flexbox-columns > aside {
+                
+                flex: 1;
+        
+        }
+        /*table*/
+        table tr:hover td {
+                background-color: var(--text-green);
+                color: var(--white);
+        }
+
+}     
