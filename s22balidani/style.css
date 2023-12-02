@@ -131,7 +131,6 @@ nav a.active:hover{
 .sections {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex:1;
     max-width: 1300px;
     padding: 20px;
