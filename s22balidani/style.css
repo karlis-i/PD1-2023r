@@ -19,7 +19,7 @@ h1{
     color: var(--blue);
     text-align: center;
 }
-.contact-info li::before{
+.contact-info dt::before{
     content: "\1F426";
     
 }
@@ -139,6 +139,9 @@ nav a.active:hover{
     text-align: center;
     box-shadow: 10px 10px 10px var(--blue);
     
+  }
+  table{
+    font-family: var(--fontRoboto);
   }
   button {
     align-items: flex-end;
